@@ -1,147 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Chrislayne"/>
-    <link href="./assets/style.css" rel="stylesheet"/>
-    <script src="assets/index.js"></script>
-    <title>For You</title>
-</head>
-<body>
-    <div class="container">
-        <div class="promotion">
-            <div class="section-header">
-                <div>
-                    <span class="title-logo">For You</span>
-                </div>
-                <div>
-                    Bem-vindo(a)!
-                </div>
-            </div>
-            <div class="ads">
-                <div style="width: 60%;">
-                    <h1>
-                        Aproveite nossa pink friday para comprar seus perfumes com
-                        descontos e frete grátis!
-                    </h1>
-                    <span class="subtile">
-                        informe seu nome e email para receber nossas promoções!
-                    </span>
-                    <div class="form-container">
-                        <div class="contaiter-inputs">
-                            <div class="input-area">
-                                <label for="nome">Nome</label>
-                                <br>
-                                <input type="text" name="nome" id="nome">
-                            </div>
-                            <div class="input-area">
-                                <label for="nome">Email</label>
-                                <br>
-                                <input type="email" name="email" id="email">
-                            </div>
-                        </div>
-                        <div>
-                            <button class="btn-buy" onclick="salvar()">Quero receber!</button>
-                        </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Chrislayne"/>
+        <link href="./assets/style.css" rel="stylesheet"/>
+        <script src="assets/index.js"></script>
+        <title>For You</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="promotion">
+                <div class="section-header">
+                    <div>
+                        <span class="title-logo">For You</span>
+                    </div>
+                    <div>
+                        Bem-vindo(a)!
                     </div>
                 </div>
-                <div class="img-container">
-                    <img class="img-header" src="assets\imgs\perfume.png" alt="Perfume">
+                <div class="ads">
+                    <div style="width: 60%;">
+                        <h1>
+                            Aproveite nossa pink friday para comprar seus perfumes com
+                            descontos e frete grátis!
+                        </h1>
+                        <span class="subtile">
+                            informe seu nome e email para receber nossas promoções!
+                        </span>
+                        <div class="form-container">
+                            <div class="contaiter-inputs">
+                                <div class="input-area">
+                                    <label for="nome">Nome</label>
+                                    <br>
+                                    <input type="text" name="nome" id="nome">
+                                </div>
+                                <div class="input-area">
+                                    <label for="nome">Email</label>
+                                    <br>
+                                    <input type="email" name="email" id="email">
+                                </div>
+                            </div>
+                            <div>
+                                <button class="btn-buy" onclick="salvar()">Quero receber!</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img class="img-header" src="assets\imgs\perfume.png" alt="Perfume">
+                    </div>
+                </div>
+            </div>
+            <div class="products-container">
+                <div>
+                    <span class="title-section">Queridinhos da pink friday</span>
+                </div>
+
+                <div class="list-ads">
+                    <div class="product-card">
+                        <div class="inner-card">
+                            <div class="description-card">
+                                <div class="title-card">
+                                    <span>Perfume 212 Sexy Edp</span>
+                                </div>
+                                <div>
+                                    <span>Inspirado numa geração de mulheres ativas, criativas e ligadas à moda, 212 Sexy de Carolina Herrera</span>
+                                </div>
+                                <div class="price-container">
+                                    <div class="price">
+                                        <span>Preço:</span>
+                                    </div>
+                                    <div class="value">
+                                        <span>R$ 329,90</span>
+                                    </div>
+                                </div>
+                                    <button class="btn-buy" type="button">Comprar</button>
+                            </div>
+                            <img style="width: 20%; border-radius: 10px;" src="assets/imgs/p1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="inner-card">
+                            <div class="description-card">
+                                <div class="title-card">
+                                    <span>Perfume 212 Sexy Edp</span>
+                                </div>
+                                <div>
+                                    <span>Inspirado numa geração de mulheres ativas, criativas e ligadas à moda, 212 Sexy de Carolina Herrera</span>
+                                </div>
+                                <div class="price-container">
+                                    <div class="price">
+                                        <span>Preço:</span>
+                                    </div>
+                                    <div class="value">
+                                        <span>R$ 329,90</span>
+                                    </div>
+                                </div>
+                                    <button class="btn-buy" type="button">Comprar</button>
+                            </div>
+                            <img style="width: 20%; border-radius: 10px;" src="assets/imgs/p1.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="products-container">
-            <div>
-                <span class="title-section">Queridinhos da pink friday</span>
-            </div>
-
-            <div class="list-ads">
-                <div class="product-card">
-                    <div class="inner-card">
-                        <div class="description-card">
-                            <div class="title-card">
-                                <span>Perfume 212 Sexy Edp</span>
-                            </div>
-                            <div>
-                                <span>Inspirado numa geração de mulheres ativas, criativas e ligadas à moda, 212 Sexy de Carolina Herrera</span>
-                            </div>
-                            <div class="price-container">
-                                <div class="price">
-                                    <span>Preço:</span>
-                                </div>
-                                <div class="value">
-                                    <span>R$ 329,90</span>
-                                </div>
-                            </div>
-                                <button class="btn-buy" type="button">Comprar</button>
-                        </div>
-                        <img style="width: 20%; border-radius: 10px;" src="assets/imgs/p1.jpg" alt="">
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="inner-card">
-                        <div class="description-card">
-                            <div class="title-card">
-                                <span>Perfume 212 Sexy Edp</span>
-                            </div>
-                            <div>
-                                <span>Inspirado numa geração de mulheres ativas, criativas e ligadas à moda, 212 Sexy de Carolina Herrera</span>
-                            </div>
-                            <div class="price-container">
-                                <div class="price">
-                                    <span>Preço:</span>
-                                </div>
-                                <div class="value">
-                                    <span>R$ 329,90</span>
-                                </div>
-                            </div>
-                                <button class="btn-buy" type="button">Comprar</button>
-                        </div>
-                        <img style="width: 20%; border-radius: 10px;" src="assets/imgs/p1.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- <header role="banner">
-        <nav role="navigation" aria-level="main navigaton">
-            <ul>
-                <li class="menu">
-                    <a href="#" role="menuitem">Home</a>
-                </li>
-                <li>
-                    <a href="#" role="menuitem">Quem somos</a>
-                </li>
-                <li>
-                    <a href="#" role="menuitem">Contato</a>
-                </li>
-                <li>
-                    <a href="#" role="menuitem">Nossas Promoções</a>
-                </li>
-                <li>
-                    <a href="#" role="menuitem">Nossos Produtos</a>
-                </li>
-            </ul>
-        </nav>
-    </header> -->
-    <!-- <main role="main">
-        <form action="#" method="POST">
-
-            <legend>Cadastre os seus dados para receber nossas promoções</legend>
-            <label for="campo1">Nome</label>
-            <input type="text" name="nome" id="campo1"/>
-
-            <label for="campo2">e-mail</label>
-            <input type="text" email="e-mail" id="campo2"/>
-            <input type="submit" value="Enviar"/>
-        </form>
-    </main> -->
-
-    <!-- <footer role="contentinf">
-        &copy;2021 Chrislayne
-    </footer> -->
-
-</body>
+    </body>
 </html>

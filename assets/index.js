@@ -1,7 +1,3 @@
-window.onload = function() {
-    console.log('oi!');
-}
-
 function salvar() {
     var nome = document.getElementById('nome').value;
     var email = document.getElementById('email').value;
