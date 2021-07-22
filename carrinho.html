@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Chrislayne"/>
+        <link href="./assets/style.css" rel="stylesheet"/>
+        <script src="assets/index.js"></script>
+        <title>For You</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="promotion">
+                <div class="section-header">
+                    <div>
+                        <img src="/assets/icons/carrinho.png" class="carrinho-icone">
+                        <span class="title-logo">Carrinho</span>
+                    </div>
+                    <div>
+                        <a href="index.html" style="text-decoration: none; color: #fff;">
+                            Voltar
+                        </a>
+                    </div>
+                </div>
+                <div class="ads">
+                    <div style="width: 60%;">
+                        <h1>
+                            Cadastre seu endereço para receber os produtos do carrinho
+                        </h1>
+                        <div class="form-container">
+                            <div class="contaiter-inputs">
+                                <div class="input-area">
+                                    <label for="nome">Nome</label>
+                                    <br>
+                                    <input class="input-form" type="text" name="name" id="name">
+                                </div>
+                                <div class="input-area">
+                                    <label for="nome">Email</label>
+                                    <br>
+                                    <input class="input-form" type="email" name="email" id="email">
+                                </div>
+                            </div>
+                            <div class="contaiter-inputs">
+                                <div class="input-area">
+                                    <label for="nome">Endereço</label>
+                                    <br>
+                                    <input class="input-form" type="text" name="endereco" id="endereco">
+                                </div>
+                            </div>
+                            <div style="margin-left: 14px;">
+                                <div style="margin-bottom: 12px; color: #fff;">
+                                    <span>Selecione a forma de pagamento</span>
+                                </div>
+                                <input type="radio" id="age1" name="age" value="30">
+                                <label for="age">Cartao de Crédito</label>
+                                <input style="margin-left: 20px;" type="radio" id="age1" name="age" value="30">
+                                <label for="age">Boleto</label>
+                            </div>
+                            <div>
+                                <button class="btn-buy" onclick="salvar()">Finalizar compra!</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-container">
+                        <img class="img-header" src="assets\imgs\perfume.png" alt="Perfume">
+                    </div>
+                </div>
+            </div>
+            <div class="products-container">
+                <div>
+                    <span class="title-section">No carrinho</span>
+                </div>
+
+                <div id="lista-carrinho">
+                    <!-- lista de produtos -->
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -17,7 +17,12 @@
                         <span class="title-logo">For You</span>
                     </div>
                     <div>
-                        Bem-vindo(a)!
+                        <div style="display: flex;">
+                            <a href="carrinho.html">
+                                <img src="/assets/icons/carrinho.png" class="carrinho-icone">
+                            </a>
+                            <div id="carrinho-contador"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="ads">
@@ -34,12 +39,12 @@
                                 <div class="input-area">
                                     <label for="nome">Nome</label>
                                     <br>
-                                    <input type="text" name="nome" id="nome">
+                                    <input class="input-form" type="text" name="name" id="name">
                                 </div>
                                 <div class="input-area">
                                     <label for="nome">Email</label>
                                     <br>
-                                    <input type="email" name="email" id="email">
+                                    <input class="input-form" type="email" name="email" id="email">
                                 </div>
                             </div>
                             <div>
@@ -61,7 +66,7 @@
                     <div class="product-card">
                         <div class="inner-card">
                             <div class="description-card">
-                                <div class="title-card">
+                                <div class="title-card" id="212">
                                     <span>Perfume 212 Sexy Edp</span>
                                 </div>
                                 <div>
@@ -75,7 +80,7 @@
                                         <span>R$ 329,90</span>
                                     </div>
                                 </div>
-                                    <button class="btn-buy" type="button">Comprar</button>
+                                    <button class="btn-buy" onclick="addCarrinho(0)" type="button">Adicionar ao carrinho</button>
                             </div>
                             <img style="width: 20%; border-radius: 10px;" src="assets/imgs/p1.jpg" alt="">
                         </div>
@@ -84,22 +89,110 @@
                         <div class="inner-card">
                             <div class="description-card">
                                 <div class="title-card">
-                                    <span>Perfume 212 Sexy Edp</span>
+                                    <span>Pure XS Eau de Parfum Feminino</span>
                                 </div>
                                 <div>
-                                    <span>Inspirado numa geração de mulheres ativas, criativas e ligadas à moda, 212 Sexy de Carolina Herrera</span>
+                                    <span>Notas mais aveludadas e quentes, como âmbar e baunilha</span>
                                 </div>
                                 <div class="price-container">
                                     <div class="price">
                                         <span>Preço:</span>
                                     </div>
                                     <div class="value">
-                                        <span>R$ 329,90</span>
+                                        <span>R$ 459,00</span>
                                     </div>
                                 </div>
-                                    <button class="btn-buy" type="button">Comprar</button>
+                                    <button class="btn-buy" onclick="addCarrinho(1)" type="button">Adicionar ao carrinho</button>
                             </div>
-                            <img style="width: 20%; border-radius: 10px;" src="assets/imgs/p1.jpg" alt="">
+                            <img style="width: 20%; border-radius: 10px;" src="assets/imgs/p2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="inner-card">
+                            <div class="description-card">
+                                <div class="title-card">
+                                    <span>Chloé Eau de Parfum</span>
+                                </div>
+                                <div>
+                                    <span>É um floral elegante e delicado</span>
+                                </div>
+                                <div class="price-container">
+                                    <div class="price">
+                                        <span>Preço:</span>
+                                    </div>
+                                    <div class="value">
+                                        <span>R$ 567,90</span>
+                                    </div>
+                                </div>
+                                    <button class="btn-buy" onclick="addCarrinho(2)" type="button">Adicionar ao carrinho</button>
+                            </div>
+                            <img style="width: 20%; border-radius: 10px;" src="assets/imgs/p3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="inner-card">
+                            <div class="description-card">
+                                <div class="title-card">
+                                    <span>Perfume Good Girl Suprême Carolina Herrera Feminino Eau de Parfum</span>
+                                </div>
+                                <div>
+                                    <span>Intenso e sedutor, é perfeito para ocasiões especiais e para você brilhar e atrair todos os olhares por onde passa</span>
+                                </div>
+                                <div class="price-container">
+                                    <div class="price">
+                                        <span>Preço:</span>
+                                    </div>
+                                    <div class="value">
+                                        <span>R$ 321,90</span>
+                                    </div>
+                                </div>
+                                    <button class="btn-buy" onclick="addCarrinho(3)" type="button">Adicionar ao carrinho</button>
+                            </div>
+                            <img style="width: 20%; border-radius: 10px;" src="assets/imgs/p4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="inner-card">
+                            <div class="description-card">
+                                <div class="title-card">
+                                    <span>Libre Yves Saint Laurent Eau de Parfum</span>
+                                </div>
+                                <div>
+                                    <span> É um grito pela liberdade da mulher que vive intensamente</span>
+                                </div>
+                                <div class="price-container">
+                                    <div class="price">
+                                        <span>Preço:</span>
+                                    </div>
+                                    <div class="value">
+                                        <span>R$ 488,90</span>
+                                    </div>
+                                </div>
+                                    <button class="btn-buy" onclick="addCarrinho(4)" type="button">Adicionar ao carrinho</button>
+                            </div>
+                            <img style="width: 20%; border-radius: 10px;" src="assets/imgs/p5.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="inner-card">
+                            <div class="description-card">
+                                <div class="title-card">
+                                    <span>Olympéa Paco Rabanne Eau de Parfum</span>
+                                </div>
+                                <div>
+                                    <span>Olympéa invoca a força e o dinamismo de Olímpia, a deusa grega mitológica</span>
+                                </div>
+                                <div class="price-container">
+                                    <div class="price">
+                                        <span>Preço:</span>
+                                    </div>
+                                    <div class="value">
+                                        <span>R$ 267,90</span>
+                                    </div>
+                                </div>
+                                    <button class="btn-buy" onclick="addCarrinho(5)" type="button">Adicionar ao carrinho</button>
+                            </div>
+                            <img style="width: 20%; border-radius: 10px;" src="assets/imgs/p6.jpg" alt="">
                         </div>
                     </div>
                 </div>
